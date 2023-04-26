@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/alura.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <header>
+
+        <div class="logoCompleto">
+            <img  class="logo" id="logoOracle"src="img/oracle-svgrepo-com.svg" alt="oracle">
+            
+        
+            <img class="logo" id = "logoMas"src="img/mas.svg" alt="mas">
+    
+            <img class="logo" id="logoAlura" src="img/tinywow_descarga_19510036.svg" alt="alura" >
+        </div>
+
+    </header>
+    <section class="contenedor">
+    <div class="container">
+        <div class="encriptar">
+
+            <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+        </div>
+
+        <div class="terminos">
+            <span class="material-symbols-outlined">
+                error
+                </span>
+            <p>Solo letras minusculas y sin acentos</p>
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" id="btn-encriptar">Encriptar </button>
+
+            
+
+            <button type="button" class="btn-desencriptar" id="btn-desencriptar">Desencriptar</button>
+        </div>
+
+    </div>
+
+    <div class="encriptado">
+
+        <img src="img/avatar-thinking-3-svgrepo-com (2).svg" alt="niño" id="munheco">
+
+        <!-- <textarea name="mensajeRespuesta" id="mensajeRespuesta" class=""cols="30" rows="10" class="mensaje" style="border: none readonly;"></textarea> -->
+
+        <p id="mensajeRespuesta"></p>
+        
+        <div class="mesajeEncriptado" id="mensajeencriptado">
+            <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button type="button" class="btn-copiar" id="btn-copiar">Copiar</button>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>Made by Edwin Andrey Gauta Castañeda <img src="img/emoji-emoticon-happy-3-svgrepo-com (1).svg" alt="emoji" id="emoji"></p>
+        
+    </footer>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
